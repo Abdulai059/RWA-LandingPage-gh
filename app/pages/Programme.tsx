@@ -64,7 +64,7 @@ export default function Programme() {
         <div className="grid gap-8 border-b border-black pb-10 sm:pb-14 lg:grid-cols-[1fr_0.65fr] lg:items-end">
           <div>
             <p className="mb-5 flex items-center gap-3 font-mono text-xs font-bold uppercase tracking-[0.2em] text-black/55">
-              <span className="h-1 w-8 bg-[#E6FF27]" />
+              <span className="h-1 w-8 bg-section-bg" />
               ARWATS 2027 / The Schedule
             </p>
 
@@ -74,7 +74,7 @@ export default function Programme() {
             >
               THE
               <br />
-              PROGRAMME<span className="text-[#A7BD00]">.</span>
+              PROGRAMME<span className="text-programme-accent">.</span>
             </h2>
           </div>
 
@@ -107,7 +107,7 @@ export default function Programme() {
                   />
                 )}
 
-                <span className="relative z-10 mt-1 block size-4 rounded-full border-[4px] border-black bg-[#E6FF27] transition-transform group-hover:scale-125" />
+                <span className="relative z-10 mt-1 block size-4 rounded-full border-[4px] border-black bg-section-bg transition-transform group-hover:scale-125" />
 
                 <p className="mt-4 font-mono text-[11px] font-bold leading-5 sm:text-sm">
                   {item.time}
@@ -148,7 +148,7 @@ export default function Programme() {
 
           <Link
             href="#register"
-            className="inline-flex min-h-12 w-fit items-center gap-3 bg-[#E6FF27] px-6 py-3 text-sm font-bold text-black transition-colors hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
+            className="inline-flex min-h-12 w-fit items-center gap-3 bg-section-bg px-6 py-3 text-sm font-bold text-black transition-colors hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
           >
             Stay Informed
             <ArrowUpRight className="size-4" />

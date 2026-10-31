@@ -8,7 +8,7 @@ export default function Speakers() {
       aria-labelledby="speakers-heading"
       className="bg-white px-5 py-20 text-black sm:px-8 sm:py-28 lg:py-32"
     >
-      <div className="mx-auto max-w-[1240px]">
+      <div className="mx-auto max-w-310">
         {/* Section introduction */}
         <div className="mb-10 flex flex-col justify-between gap-6 sm:mb-14 sm:flex-row sm:items-end">
           <div>
@@ -23,7 +23,7 @@ export default function Speakers() {
             >
               MEET THE
               <br />
-              <span className="font-serif italic font-normal normal-case tracking-[-0.05em]">
+              <span className="font-serif italic font-normal normal-case tracking-tighter">
                 minds.
               </span>
             </h2>
@@ -38,33 +38,35 @@ export default function Speakers() {
         {/* Editorial speaker poster */}
         <div className="grid grid-cols-1 gap-1.5 border-[3px] border-black bg-black p-1.5 sm:grid-cols-[minmax(0,1fr)_110px] lg:grid-cols-[minmax(0,1fr)_150px]">
           {/* Main poster */}
-          <div className="grid min-w-0 grid-cols-1 gap-1.5 sm:grid-cols-[minmax(0,1.8fr)_minmax(100px,0.55fr)]">
+          <div className="grid min-w-0 grid-cols-1 gap-1.5 sm:grid-cols-[minmax(0,0.55fr)_minmax(0,1.8fr)]">
             {/* Heading panel */}
-            <div className="relative flex min-h-[190px] items-end overflow-hidden bg-[#E6FF27] p-6 sm:col-span-2 sm:min-h-[225px] sm:p-9 lg:p-12">
+            <div className="relative flex min-h-47.5 items-end overflow-hidden bg-section-bg p-6 pt-12 sm:col-span-2 sm:min-h-56.25 sm:p-9 sm:pt-12 lg:p-12">
               <span className="absolute right-5 top-4 font-mono text-[10px] font-bold tracking-[0.2em] sm:right-8 sm:top-7">
                 ARWATS / 2027
               </span>
 
-              <h3 className="max-w-4xl font-serif text-[clamp(3rem,8vw,7.5rem)] font-black uppercase leading-[0.78] tracking-[-0.065em]">
+              {/* Smaller clamp on mobile so "CONFERENCE" never clips */}
+              <h3 className="max-w-4xl font-serif text-[clamp(2rem,9.5vw,3.5rem)] font-black uppercase leading-[0.82] tracking-[-0.065em] sm:text-[clamp(3rem,8vw,7.5rem)]">
                 CONFERENCE
                 <br />
                 SPEAKERS
               </h3>
 
-              <span className="absolute bottom-5 right-5 hidden text-xs font-bold uppercase tracking-widest sm:block">
+              {/* Only from lg, where it can't collide with the heading */}
+              <span className="absolute bottom-5 right-5 hidden text-xs font-bold uppercase tracking-widest lg:block">
                 IDEAS. PEOPLE. IMPACT.
               </span>
             </div>
 
-            {/* Vertical editorial strip */}
-            <div className="hidden min-h-[340px] items-center justify-center bg-[#E6FF27] p-4 sm:flex">
-              <p className="[writing-mode:vertical-rl] rotate-180 font-serif text-2xl font-black uppercase leading-none tracking-tight lg:text-3xl">
+            {/* Vertical editorial strip (narrow column, left of portrait) */}
+            <div className="hidden items-center justify-center overflow-hidden bg-section-bg p-4 sm:flex">
+              <p className="[writing-mode:vertical-rl] rotate-180 font-serif text-base font-black uppercase leading-none tracking-tight lg:text-xl">
                 BUSINESS · LEADERSHIP · INNOVATION
               </p>
             </div>
 
-            {/* Portrait / announcement panel */}
-            <div className="relative flex min-h-[300px] flex-col items-center justify-center overflow-hidden bg-[#e9e9e5] p-6 sm:min-h-[340px] lg:min-h-[440px]">
+            {/* Portrait / announcement panel (wide column) */}
+            <div className="relative flex min-h-80 flex-col items-center justify-center overflow-hidden bg-panel-bg p-6 pb-14 sm:min-h-95 lg:min-h-110">
               <div
                 aria-hidden="true"
                 className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,#ffffff_0%,#e9e9e5_62%,#d5d5d0_100%)]"
@@ -93,21 +95,21 @@ export default function Speakers() {
                   Soon.
                 </p>
 
-                <p className="mx-auto mt-3 max-w-[240px] text-xs leading-5 text-black/60 sm:text-sm">
+                <p className="mx-auto mt-3 max-w-60 text-xs leading-5 text-black/60 sm:text-sm">
                   Speaker announcements will be revealed as details are
                   confirmed.
                 </p>
               </div>
 
-              <span className="absolute bottom-5 left-5 font-mono text-[9px] font-bold tracking-[0.2em]">
+              <span className="absolute bottom-5 left-6 font-mono text-[9px] font-bold tracking-[0.2em] sm:left-8">
                 FIG. 001 — THE VOICES
               </span>
             </div>
           </div>
 
           {/* Right information rail */}
-          <aside className="grid grid-cols-[1fr_auto] gap-1.5 sm:grid-cols-1">
-            <div className="flex min-h-[170px] flex-col justify-between bg-[#E6FF27] p-5 sm:min-h-0 sm:items-center sm:p-4 lg:p-6">
+          <aside className="grid grid-cols-2 gap-1.5 sm:grid-cols-1 sm:grid-rows-2">
+            <div className="flex min-h-42.5 min-w-0 flex-col justify-between overflow-hidden bg-section-bg p-5 sm:min-h-0 sm:items-center sm:p-4 lg:p-6">
               <span className="font-mono text-[10px] font-bold tracking-widest sm:[writing-mode:vertical-rl] sm:rotate-180">
                 ARWATS 2027
               </span>
@@ -125,7 +127,7 @@ export default function Speakers() {
               </span>
             </div>
 
-            <div className="flex min-h-[170px] flex-col justify-between bg-[#E6FF27] p-5 sm:min-h-0 sm:items-center sm:p-4 lg:p-6">
+            <div className="flex min-h-42.5 min-w-0 flex-col justify-between overflow-hidden bg-section-bg p-5 sm:min-h-0 sm:items-center sm:p-4 lg:p-6">
               <span className="font-mono text-[10px] font-bold tracking-widest sm:[writing-mode:vertical-rl] sm:rotate-180">
                 THE CONVERSATION
               </span>
@@ -148,8 +150,8 @@ export default function Speakers() {
         {/* Bottom call to action */}
         <div className="mt-6 flex flex-col gap-5 border-b border-black/15 pb-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <span className="grid size-10 place-items-center bg-[#E6FF27]">
-              <Mic2 className="size-5" />
+            <span className="grid size-10 shrink-0 place-items-center bg-[#E6FF27]">
+              <Mic2 className="size-5" aria-hidden="true" />
             </span>
 
             <div>
@@ -164,10 +166,10 @@ export default function Speakers() {
 
           <Link
             href="#register"
-            className="inline-flex w-fit items-center gap-2 border-b-2 border-[#E6FF27] pb-2 text-xs font-black uppercase tracking-wide transition-colors hover:border-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
+            className="inline-flex w-fit items-center gap-2 border-b-2 border-section-bg pb-2 text-xs font-black uppercase tracking-wide transition-colors hover:border-black focus-visible:outline-2  focus-visible:outline-offset-4 focus-visible:outline-black"
           >
             Get event updates
-            <ArrowUpRight className="size-4" />
+            <ArrowUpRight className="size-4" aria-hidden="true" />
           </Link>
         </div>
       </div>

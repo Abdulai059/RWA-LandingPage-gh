@@ -11,20 +11,20 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="overflow-hidden bg-[#171812] text-white">
+    <footer className="overflow-hidden bg-footer-bg text-white">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-16">
         {/* Main CTA */}
         <div className="grid gap-10 border-b border-white/15 py-16 sm:py-20 lg:grid-cols-[1fr_auto] lg:items-end lg:py-28">
           <div>
             <p className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-white/55">
-              <span className="h-2.5 w-2.5 bg-[#D9F72B]" />
+              <span className="h-2.5 w-2.5 bg-accent" />
               ARWATS 2027
             </p>
 
             <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.88] tracking-[-0.07em] sm:text-7xl lg:text-[7rem]">
               Ideas move
               <br />
-              <span className="text-[#D9F72B]">us forward.</span>
+              <span className="text-accent">us forward.</span>
             </h2>
 
             <p className="mt-7 max-w-lg text-sm leading-7 text-white/60 sm:text-base">
@@ -35,7 +35,7 @@ export default function Footer() {
 
           <Link
             href="#register"
-            className="group flex min-h-16 w-fit items-center justify-between gap-10 bg-[#D9F72B] px-6 py-5 text-sm font-bold text-[#171812] transition-colors hover:bg-white"
+            className="group flex min-h-16 w-fit items-center justify-between gap-10 bg-accent px-6 py-5 text-sm font-bold text-footer-bg transition-colors hover:bg-white"
           >
             Register your interest
             <ArrowUpRight
@@ -53,12 +53,12 @@ export default function Footer() {
               aria-label="ARWATS 2027, back to top"
               className="inline-flex items-center gap-3"
             >
-              <span className="flex h-11 w-11 items-center justify-center bg-[#D9F72B] text-sm font-black text-[#171812]">
+              <span className="flex h-11 w-11 items-center justify-center bg-accent text-sm font-black text-footer-bg">
                 A.
               </span>
 
               <span className="text-lg font-black uppercase tracking-tight">
-                ARWATS <span className="text-[#D9F72B]">2027</span>
+                ARWATS <span className="text-accent">2027</span>
               </span>
             </Link>
 
@@ -81,7 +81,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="group flex w-fit items-center gap-2 text-sm text-white/70 transition-colors hover:text-[#D9F72B]"
+                  className="group flex w-fit items-center gap-2 text-sm text-white/70 transition-colors hover:text-accent"
                 >
                   {link.label}
                   <ArrowUpRight
@@ -100,7 +100,7 @@ export default function Footer() {
 
           <Link
             href="#top"
-            className="group inline-flex w-fit items-center gap-2 font-bold uppercase tracking-[0.12em] transition-colors hover:text-[#D9F72B]"
+            className="group inline-flex w-fit items-center gap-2 font-bold uppercase tracking-[0.12em] transition-colors hover:text-accent"
           >
             Back to top
             <ArrowDown

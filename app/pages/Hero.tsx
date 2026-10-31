@@ -44,7 +44,7 @@ export default function Hero() {
             {hero.shortName}
           </p>
 
-          <h1 className="mb-5 text-5xl font-bold leading-[1.04] tracking-tight text-ink">
+          <h1 className="mb-5 text-5xl font-black sm:text-7xl lg:text-[4rem] leading-[1.04] tracking-tight text-ink">
             {hero.slogan}
           </h1>
 
@@ -60,7 +60,7 @@ export default function Hero() {
             </InfoPill>
           </ul>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="hidden flex-wrap items-center gap-4">
             <a
               href={cta.href}
               className="w-full rounded-full bg-ink px-9 py-4 text-center font-semibold tracking-wide text-brand transition hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-ink motion-reduce:transition-none sm:w-auto"

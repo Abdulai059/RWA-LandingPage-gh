@@ -48,14 +48,14 @@ export default function FAQ() {
   return (
     <section
       id="faqs"
-      className="bg-white px-5 py-20 text-[#171812] sm:px-8 sm:py-28 lg:px-16 lg:py-32"
+      className="bg-white px-5 py-20 text-footer-bg sm:px-8 sm:py-28 lg:px-16 lg:py-32"
     >
       <div className="mx-auto max-w-7xl">
         {/* Section heading */}
         <div className="mb-16 grid gap-8 lg:mb-20 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <div>
             <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em]">
-              <span className="h-2.5 w-2.5 bg-[#D9F72B]" />
+              <span className="h-2.5 w-2.5 bg-accent" />
               Good questions
             </span>
 
@@ -67,9 +67,9 @@ export default function FAQ() {
           <h2 className="text-5xl font-black uppercase leading-[0.88] tracking-[-0.07em] sm:text-6xl md:text-7xl lg:text-[6.5rem]">
             Frequently
             <br />
-            <span className="text-[#85867C]">asked</span>
+            <span className="text-faq-muted">asked</span>
             <br />
-            questions<span className="text-[#D9F72B]">.</span>
+            questions<span className="text-accent">.</span>
           </h2>
         </div>
 
@@ -99,7 +99,7 @@ export default function FAQ() {
                   <span
                     className={`flex h-9 w-9 items-center justify-center justify-self-end transition-colors sm:h-11 sm:w-11 ${
                       isOpen
-                        ? "bg-[#D9F72B] text-black"
+                        ? "bg-accent text-black"
                         : "border border-black/20 text-black group-hover:border-black"
                     }`}
                   >
@@ -147,7 +147,7 @@ export default function FAQ() {
 
           <a
             href="#register"
-            className="group inline-flex min-h-14 w-fit items-center justify-between gap-8 bg-[#D9F72B] px-6 py-4 text-sm font-bold transition-colors hover:bg-black hover:text-white"
+            className="group inline-flex min-h-14 w-fit items-center justify-between gap-8 bg-accent px-6 py-4 text-sm font-bold transition-colors hover:bg-black hover:text-white"
           >
             Register your interest
             <ArrowUpRight

@@ -69,12 +69,12 @@ export default function Navbar({ siteName, links, ctaLabel, ctaHref }: Props) {
       <nav
         ref={navRef}
         aria-label="Main navigation"
-        className="relative z-50 isolate mx-auto flex max-w-[1240px] items-center justify-between gap-6 rounded-[24px] border border-brand/20 bg-ink-2/50 px-5 py-4 shadow-xl backdrop-blur-2xl sm:px-6"
+        className="relative z-50 isolate mx-auto flex max-w-310 items-center justify-between gap-6 rounded-full border border-brand/20 bg-ink-2/50 px-5 md:py-4 py-2  shadow-xl backdrop-blur-2xl sm:px-6"
       >
         {/* Background glow, clipped independently */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-[24px]"
+          className="pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-3xl"
         >
           <div className="absolute -left-10 -top-10 size-40 rounded-full bg-brand/10 blur-3xl" />
           <div className="absolute -right-10 -top-10 size-40 rounded-full bg-tint/5 blur-3xl" />
@@ -150,7 +150,7 @@ export default function Navbar({ siteName, links, ctaLabel, ctaHref }: Props) {
                   className={`block rounded-lg px-3.5 py-3 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand md:px-0 md:py-2 ${
                     isActive
                       ? "font-semibold text-brand"
-                      : "text-muted hover:text-brand"
+                      : "text-white/80 hover:text-brand"
                   }`}
                 >
                   {link.label}

@@ -17,7 +17,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${fraunces.variable} ${instrument.variable}`}>
-      <body className="bg-white font-sans text-ink antialiased">
+      <body
+        className="bg-white font-sans text-ink antialiased"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>
